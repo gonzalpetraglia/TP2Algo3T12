@@ -40,7 +40,7 @@ public class Posicion implements Cloneable{
 		return new Posicion(x,y);
 	}
 	
-	public float distanciaA(Posicion otra){
+	public float manhattan(Posicion otra){
 		if(otra==null) throw new IllegalArgumentException();
 		return Math.max(Math.abs(otra.x-x),Math.abs(otra.y-y));
 	}
@@ -48,5 +48,21 @@ public class Posicion implements Cloneable{
 	@Override
 	public String toString(){
 		return "(x="+x+", y=" + y +")";
+	}
+	
+	public int getX(){
+		return x;
+	}
+	
+	public int getY(){
+		return y;
+	}
+	
+	public Posicion resta(Posicion otra){
+		return new Posicion(x-otra.x,y-otra.y);
+	}
+	
+	public Posicion suma(Posicion otra){
+		return new Posicion(x+otra.x,y+otra.y);
 	}
 }
