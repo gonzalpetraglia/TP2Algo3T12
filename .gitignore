@@ -4,4 +4,3 @@ build/
 .project
 .settings/
 build.xml.old
-*.jar
