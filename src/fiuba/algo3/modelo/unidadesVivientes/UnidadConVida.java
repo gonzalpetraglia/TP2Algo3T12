@@ -23,7 +23,7 @@ public abstract class UnidadConVida extends Unidad{
     }
     @Override
 	public void recibirDanio(Unidad atacante, int danio) throws FriendlyFireException {
-    	if(atacante.es(equipo)){
+    	if(atacante.es(equipo)){//Este if está mal, cómo puedo volarlo?
     		throw new FriendlyFireException();
     	}
     	vida -= danio;
