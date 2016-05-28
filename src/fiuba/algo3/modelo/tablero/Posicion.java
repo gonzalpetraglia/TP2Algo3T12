@@ -1,4 +1,4 @@
-package fiuba.algo3.modelo;
+package fiuba.algo3.modelo.tablero;
 import java.lang.IllegalArgumentException;
 import java.util.Objects;
 /**
@@ -51,9 +51,9 @@ public class Posicion implements Cloneable{
         return new Posicion(x,y);
     }
 	
-    public float distanciaA(Posicion otra){
+    public Integer distanciaA(Posicion otra){
         if(otra==null) throw new IllegalArgumentException();
-        return Math.max(Math.abs(otra.x-x),Math.abs(otra.y-y));
+        return (Integer)Math.max(Math.abs(otra.x-x),Math.abs(otra.y-y));
     }
 	
     @Override

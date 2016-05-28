@@ -5,8 +5,8 @@
  */
 package algo3.fiuba.model.tablero;
 
-import fiuba.algo3.modelo.Posicion;
-import fiuba.algo3.modelo.Tablero;
+import fiuba.algo3.modelo.tablero.Posicion;
+import fiuba.algo3.modelo.tablero.Tablero;
 import org.junit.Assert;
 import org.junit.Test;
 

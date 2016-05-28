@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fiuba.algo3.modelo.tablero;
+package fiuba.algo3.modelo.tablero.contenedorCasilleros;
 
-import fiuba.algo3.modelo.Posicion;
+import fiuba.algo3.modelo.tablero.Posicion;
 import fiuba.algo3.modelo.Unidad;
 import fiuba.algo3.modelo.UnidadVacia;
 
