@@ -1,16 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package fiuba.algo3.modelo;
 
-/**
- *
- * @author brahvic
- */
-public interface Unidad {
+import fiuba.algo3.modelo.equipos.Equipo;
 
-    public boolean existe();
+public abstract class Unidad {
+	
+	
+    public abstract boolean existe();
+    
+    
+    //-------------------equipo-------------
+    private final Equipo equipo;
+    Unidad(Equipo equipo){
+    	this.equipo = equipo;
+    }
     
 }

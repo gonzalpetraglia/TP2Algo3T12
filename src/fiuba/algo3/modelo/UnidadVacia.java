@@ -5,13 +5,16 @@
  */
 package fiuba.algo3.modelo;
 
+import fiuba.algo3.modelo.equipos.Ninguno;
+
 /**
  *
  * @author brahvic
  */
-public class UnidadVacia implements Unidad{
+public class UnidadVacia extends Unidad{
 
     public UnidadVacia() {
+    	super(new Ninguno());
     }
 
     @Override
