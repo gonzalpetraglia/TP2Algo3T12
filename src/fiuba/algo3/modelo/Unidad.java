@@ -14,4 +14,9 @@ public abstract class Unidad {
     	this.equipo = equipo;
     }
     
+    public boolean es(Equipo e){
+    	return equipo.equals(e);
+    }
+    
+    
 }
