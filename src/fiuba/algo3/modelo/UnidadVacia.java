@@ -6,6 +6,7 @@
 package fiuba.algo3.modelo;
 
 import fiuba.algo3.modelo.equipos.Ninguno;
+import fiuba.algo3.modelo.tablero.Posicion;
 
 /**
  *
@@ -21,5 +22,16 @@ public class UnidadVacia extends Unidad{
     public boolean existe() {
         return false ;
     }
-    
+    @Override
+    public boolean puedeAtacar(Posicion a, Posicion desde){
+    	return false;
+    }
+    @Override
+    public boolean puedeMoverse(Posicion a, Posicion desde){
+    	return false;
+    }
+
+	@Override
+	public void recibirDanio(Unidad atacante, int danio) {}
+    //no hace nada!
 }

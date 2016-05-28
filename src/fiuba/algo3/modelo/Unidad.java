@@ -1,6 +1,8 @@
 package fiuba.algo3.modelo;
 
 import fiuba.algo3.modelo.equipos.Equipo;
+import fiuba.algo3.modelo.tablero.Posicion;
+import fiuba.algo3.modelo.unidadesVivientes.FriendlyFireException;
 
 public abstract class Unidad {
 	
@@ -9,8 +11,8 @@ public abstract class Unidad {
     
     
     //-------------------equipo-------------
-    private final Equipo equipo;
-    Unidad(Equipo equipo){
+    protected final Equipo equipo;//equipo no tiene estado y es Final! Fontela, hago getter?
+    protected Unidad(Equipo equipo){
     	this.equipo = equipo;
     }
     
@@ -18,5 +20,8 @@ public abstract class Unidad {
     	return equipo.equals(e);
     }
     
+    public abstract boolean puedeAtacar(Posicion a, Posicion desde);
+    public abstract boolean puedeMoverse(Posicion a, Posicion desde);
+    public abstract void recibirDanio(Unidad atacante,int danio) throws FriendlyFireException;
     
 }
