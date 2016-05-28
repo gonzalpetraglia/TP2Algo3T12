@@ -1,12 +1,9 @@
 *.sw*
+*.class
 nbproject/
-build/
-libs/
 tmp/
-bin/
 .classpath
 .project
 .settings/
 build.xml.old
-*.jar
 manifest.mf
