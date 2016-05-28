@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.tablero;
+package fiuba.algo3.modelo.tablero;
+
+import fiuba.algo3.modelo.Posicion;
+import fiuba.algo3.modelo.Unidad;
+import fiuba.algo3.modelo.UnidadVacia;
 
 /**
  *
@@ -14,13 +18,13 @@ public class Casillero {
     public Posicion posicion;
     public Unidad unidad ;
 
-    Casillero(Posicion posicion) {
+    public Casillero(Posicion posicion) {
         this.posicion = posicion;
         this.unidad = new UnidadVacia();
     }
 
     public boolean isEmpty() {
-        return this.unidad.existe();
+        return (!(this.unidad.existe()));
     }
 
 }

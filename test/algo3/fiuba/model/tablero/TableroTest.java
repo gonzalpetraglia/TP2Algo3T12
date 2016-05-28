@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.tablero;
+package algo3.fiuba.model.tablero;
 
+import fiuba.algo3.modelo.Posicion;
+import fiuba.algo3.modelo.Tablero;
 import org.junit.Assert;
 import org.junit.Test;
 

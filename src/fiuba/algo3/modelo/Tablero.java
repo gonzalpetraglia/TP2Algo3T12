@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.tablero;
+package fiuba.algo3.modelo;
+
 
 /**
  *
@@ -15,8 +16,8 @@ public class Tablero {
 
     public Tablero(){
     this.tablero = new ContenedorCasilleros();
-        for (Integer i = 0; i < 20;i++){
-            this.tablero.agregarCasilleroVacio(new Posicion(i%50,i/50));
+        for (Integer i = 0; i < 25;i++){
+            this.tablero.agregarCasilleroVacio(new Posicion(i%5,i/5));
         }
     }
     

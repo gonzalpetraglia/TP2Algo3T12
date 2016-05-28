@@ -3,14 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.tablero;
+package fiuba.algo3.modelo;
 
 /**
  *
  * @author brahvic
  */
-public interface Unidad {
+public class UnidadVacia implements Unidad{
 
-    public boolean existe();
+    public UnidadVacia() {
+    }
+
+    @Override
+    public boolean existe() {
+        return false ;
+    }
     
 }
