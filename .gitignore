@@ -1,6 +1,5 @@
 *.sw*
 build/
-libs/
 .classpath
 .project
 .settings/
